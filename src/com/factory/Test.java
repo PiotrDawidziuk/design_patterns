@@ -14,7 +14,10 @@ public class Test {
         System.out.println("Enter second number");
         double num2 = input.nextDouble();
 
-        Divide obj = new Divide();
+        System.out.println("Enter add, divide, multiply or subtract to get result");
+
+        CalculateFactory calculateFactory = new CalculateFactory();
+        Calculate obj = calculateFactory.getCalculation(input.next());
         obj.calculate(num1, num2);
 
     }
