@@ -1,9 +1,10 @@
 package com.factory;
 
-public class Divide {
+public class Divide implements Calculate {
 
+    @Override
     public void calculate (double a, double b) {
-        System.out.println("a dividede by b is " + (a/b));
+        System.out.println(a+" : "+b+" = " + (a/b));
     }
 
 }
